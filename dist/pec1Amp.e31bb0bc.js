@@ -7356,7 +7356,7 @@ var $h3 = document.getElementById("japon");
 $h3.innerHTML = "Hora actual en Japón: ";
 var $miHora = document.getElementById("horaJapon");
 setInterval(function () {
-  var horaActual = _momentTimezone.default.tz(new Date(), 'Asia/Tokyo').format('HH:mm:ss a');
+  var horaActual = _momentTimezone.default.tz(new Date(), 'Asia/Tokyo').format('HH:mm:ss');
 
   $miHora.innerHTML = "<p>".concat(horaActual, "</p>");
 }, 1000); //para el formulario
@@ -7388,7 +7388,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57519" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64608" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
